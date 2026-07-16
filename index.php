@@ -114,10 +114,13 @@
 
         <?php
             include "action/connect.php";
-            //       ดึง  ทั้งหมด จาก orders
+
+            //       ดึง  ทั้งหมด จาก ชื่อsql
             $sql = "SELECT * FROM orders";
+
             //                      db.   คำสั่ง
             $result = mysqli_query($con, $sql);
+
             // ทดสอบตัวแปร
             // var_dump($result);
         ?> 
@@ -158,6 +161,7 @@
         </div>
 
         <a href="room.php" class="btn-link">← Go To Room</a>
+        <a href="action/insert_order.php" class="btn-link">← Go To add</a>
     </div>
 </body>
 </html>

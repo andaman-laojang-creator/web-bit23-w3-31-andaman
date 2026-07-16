@@ -10,15 +10,12 @@ ini_set('display_startup_errors', 1);
 //                        ที่อยู่ db  username pass  ชื่อ db
 $con = mysqli_connect("127.0.0.1","root","","manrood_db");
 
+
 // ทดสอบ con
 // if (!$con) {
 //     die("nooooooooooooooo");
 // }
 // echo "wowwwwwwwww <br>";
-
-
-
-
 
 
 

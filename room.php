@@ -127,10 +127,13 @@
 
         <?php
             include "action/connect.php";
-            //       ดึง  ทั้งหมด จาก orders
+
+            //       ดึง  ทั้งหมด จาก ชื่อsql
             $sql = "SELECT * FROM rooms";
+
             //                      db.   คำสั่ง
             $result = mysqli_query($con, $sql);
+
             // ทดสอบตัวแปร
             // var_dump($result);
         ?>
