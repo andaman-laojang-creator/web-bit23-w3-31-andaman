@@ -8,10 +8,8 @@ $r_id = $_POST["room_id"];
 
 include "connect.php";
 
-$sql = "INSERT INTO `orders`
-        (`name`, `payment`, `usage_type`, `room_id`, `imge`) 
-        VALUES 
-        ('$name','$pt','$ut','$r_id','$img')";
+$sql = "INSERT INTO `orders`(`name`, `payment`, `usage_type`, `room_id`, `imge`)
+        VALUES ('$name','$pt','$ut','$r_id','$img')";
 
 $result = mysqli_query($con, $sql);
 
