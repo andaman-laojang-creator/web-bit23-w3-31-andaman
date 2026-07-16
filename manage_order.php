@@ -155,7 +155,7 @@
                                 </td>
                                 <td>
                                     <!-- แก้ -->
-                                    <a href="">แก้ไข</a>
+                                    <a href="edit_order.php?id=<?= $order["order_id"] ?>">แก้ไข</a>
                                     <!-- ลบ -->
                                     <a href="action/delete_order.php?id=<?= $order["order_id"] ?>">ลบ</a>
                                 </td>
@@ -168,7 +168,7 @@
         </div>
 
         <a href="room.php" class="btn-link">← Go To Room</a>
-        <a href="action/insert_order.php" class="btn-link">← Go To add</a>
+        <a href="add_order.php" class="btn-link">← Go To add</a>
         <a href="index.php" class="btn-link">← Go To Index</a>
     </div>
 </body>

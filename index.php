@@ -161,7 +161,7 @@
         </div>
 
         <a href="room.php" class="btn-link">← Go To Room</a>
-        <a href="action/insert_order.php" class="btn-link">← Go To add</a>
+        <a href="add_order.php" class="btn-link">← Go To add</a>
         <a href="manage_order.php" class="btn-link">← Go To manage</a>
     </div>
 </body>
