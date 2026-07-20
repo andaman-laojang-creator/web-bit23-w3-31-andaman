@@ -19,7 +19,10 @@
         $order = mysqli_fetch_assoc($result);
     ?>
     
-    <form action="action/insert_order.php" method="post">
+    
+    <form action="action/update_order.php" method="post">
+
+        
 
         <label for="">ชื่อผู้เข้าพัด</label>
         <input type="text" name="name" id="" value="<?= $order["name"] ?>"> <br>
@@ -48,13 +51,18 @@
             <?php 
                 foreach($result as $room){
                     ?>
-                        <option value="<?= $room["rooms_id"] ?>">
+                        <option
+                            value="<?= $room["rooms_id"] ?>"
+                            <?= $order['room_id'] == $room['rooms_id'] ? 'selected' : '' ?>
+                            >
                             <?= $room["rooms_id"] . " - " . $room["price"] . "บาท" ?>
                         </option>
                     <?php
                 }
             ?>
         </select>
+
+        <input type="hidden" name="orderd_id" value="<?= $order['order_id'] ?>"> //
 
         <br>
         <button>บึนทึก</button>
